@@ -1,0 +1,128 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: calc(1vw + 1vh * 10);
+    font-weight: 800;
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+}
+
+h1 svg {
+    width: calc(1vw + 1vh * 10);
+    height: calc(1vw + 1vh * 10);
+    fill: var(--light);
+    animation: searchIcon 8s infinite cubic-bezier(.47,1.64,.41,.8);
+}
+
+@keyframes searchIcon {
+    0% {
+        transform: translate(0) rotate(0);
+    }
+    25% {
+        transform: translate(10px, -20px) rotate(10deg);
+    }
+    
+    50% {
+        transform: translate(0, 20px) rotate(-20deg);
+    }
+    75% {
+        transform: translate(20px, 20px) rotate(-10deg);
+    }
+    100% {
+        transform: translate(0) rotate(0);
+    }
+}
+
+span {
+    text-align: center;
+    font-size: calc(1vw + 1vh * 1.5);
+    font-weight: 600;
+    margin: calc(1vw + 1vh / 7) 0;
+    color: var(--light);
+    cursor: default;
+}
+
+.smaller {
+    font-size: calc(1vw + 1vh * 1);
+    font-weight: 400;
+    margin-top: calc(1vw + 1vh / 7);
+}
+
+a {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: calc(1vw + 1vh / 11);
+    align-items: center;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--brand);
+    border-radius: calc(1vw + 1vh / 11);
+    font-weight: 500;
+    font-size: calc(1vw + 1vh * 1);
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+a svg {
+    width: calc(1vw + 1vh * 1);
+    height: calc(1vw + 1vh * 1);
+    fill: var(--white);
+    margin-right: 10px;
+    transition: .4s;
+}
+
+a .arrow {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    stroke: var(--white);
+    left: calc(1vw + 1vh * .5);
+    top: 50%;
+    transform: translate(-30px, -50%);
+    transition: all .2s,
+        transform .6s cubic-bezier(.47,1.64,.41,.8);
+}
+
+a .folder {
+    opacity: 1;
+}
+
+a:hover {
+    background-color: var(--white);
+    color: var(--brand);
+}
+
+a:hover .folder {
+    opacity: 0;
+}
+
+a:hover .arrow {
+    transform: translate(0, -50%);
+    opacity: 1;
+    visibility: visible;
+    stroke: var(--brand);
+}
+
+h2 {
+    color: var(--light);
+    position: fixed;
+    font-size: calc(1vw + 1vh * 20);
+    z-index: -1;
+    opacity: .2;
+}
