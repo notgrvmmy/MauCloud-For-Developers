@@ -25,52 +25,52 @@ let updateTimer;
 
 const music_list = [
     {
-        img : "../../assets/music/fucksum.jpg",
+        img : "./assets/music/fucksum.jpg",
         name : "FUCK SUM.",
         artist : "kédalos",
-        music : "../../assets/music/fucksum.mp3"
+        music : "./assets/music/fucksum.mp3"
     },
     {
-        img : "../../assets/music/hotgirls.jpg",
+        img : "./assets/music/hotgirls.jpg",
         name : "Hot Girl",
         artist : "Charli XCX",
-        music : "../../assets/music/hotgirls.mp3"
+        music : "./assets/music/hotgirls.mp3"
     },
     {
-        img : "../../assets/music/bandit.jpg",
+        img : "./assets/music/bandit.jpg",
         name : "Bandit",
         artist : "Don Toliver",
-        music : "../../assets/music/BANDIT.mp3"
+        music : "./assets/music/BANDIT.mp3"
     },
     {
-        img : "../../assets/music/10x10.jpg",
+        img : "./assets/music/10x10.jpg",
         name : "10/10",
         artist : "Cobrah",
-        music : "../../assets/music/10-world79.spcs.bio.mp3"
+        music : "./assets/music/10-world79.spcs.bio.mp3"
     },
     {
-        img : "../../assets/music/vondutch.jpg",
+        img : "./assets/music/vondutch.jpg",
         name : "Von Dutch",
         artist : "Charli XCX",
-        music : "../../assets/music/Charli_Xcx-Von_Dutch-world79.spcs.bio.mp3"
+        music : "./assets/music/Charli_Xcx-Von_Dutch-world79.spcs.bio.mp3"
     },
     {
-        img : "../../assets/music/likeme.jpg",
+        img : "./assets/music/likeme.jpg",
         name : "Like Me",
         artist : "Chase Icon",
-        music : "../../assets/music/Chase Icon Like Me.mp3"
+        music : "./assets/music/Chase Icon Like Me.mp3"
     },
     {
-        img : "../../assets/music/activate.jpg",
+        img : "./assets/music/activate.jpg",
         name : "ACTIVATE",
         artist : "Cobrah",
-        music : "../../assets/music/Cobrah-ACTIVATE-world79.spcs.bio.mp3"
+        music : "./assets/music/Cobrah-ACTIVATE-world79.spcs.bio.mp3"
     },
     {
-        img : "../../assets/music/riot.jpg",
+        img : "./assets/music/riot.jpg",
         name : "Riot & Set it off",
         artist : "Yeat",
-        music : "../../assets/music/Riot & Set it off.mp3"
+        music : "./assets/music/Riot & Set it off.mp3"
     }
 ];
 

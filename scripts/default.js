@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
             sessionStorage.setItem("lastPage", window.location.href); // Сохраняем текущий URL
             
-            window.location.href = "../../404.html"; // Перенаправляем на страницу 404
+            window.location.href = "404.html"; // Перенаправляем на страницу 404
         });
     });
 });
